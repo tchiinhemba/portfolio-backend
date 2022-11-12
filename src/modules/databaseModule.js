@@ -8,7 +8,7 @@ const born = 2000;
 
 const databaseResult = fs
     .readFileSync(databasePath, { encoding: "utf8", flag: "r" })
-    .replace("#", () => new Date().getFullYear() - born);
+    .replace("myAge", () => new Date().getFullYear() - born);
 
     console.log(databaseResult)
 
