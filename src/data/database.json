@@ -49,11 +49,20 @@
         "image_link": ""
       },
       {
-        "name": "",
-        "website": "",
+        "name": "Kyndalla",
+        "website": "https://kyndalla.com/",
         "company": "",
         "image_link": ""
       }
+    ],
+    "react": [
+      {
+        "name": "oxigen",
+        "website": "https://oxygen-dun.vercel.app/",
+        "company": "",
+        "image_link": ""
+      }
+
     ]
   }
 }
