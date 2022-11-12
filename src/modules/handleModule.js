@@ -3,16 +3,21 @@
 
 const dataset = require("./databaseModule");
 
+const born = 2000;
 
 
-async function handleAge(){
+async function handleAge() {
     return await JSON.parse(dataset);
 }
 
-const test = handleAge().then(res => {
-    return res
-})
+handleAge()
+    .then(res => {
+       return res.profile.description.replace("age", () => new Date().getFullYear() - born)
+    })
+    .catch((error) => {
+        console.warn("Oooops!! Algo aconteceu!")
+    })
 
 
-console.log(test)
+
 // module.exports = newDataset;
