@@ -1,33 +1,30 @@
 {
   "name": "portfolio-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "start": "node ./src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tchiinhemba/portfolio-backend.git"
-  },
-  "keywords": [
-    "heroku"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tchiinhemba/portfolio-backend/issues"
-  },
-  "homepage": "https://github.com/tchiinhemba/portfolio-backend#readme",
+  "devDependencies": {},
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2"
+    "@strapi/strapi": "4.5.4",
+    "@strapi/plugin-users-permissions": "4.5.4",
+    "@strapi/plugin-i18n": "4.5.4",
+    "better-sqlite3": "7.4.6"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "0069c2d6-02c7-49e7-91ff-1c0443aae8c3"
   },
   "engines": {
-    "node": "16.x"
-  }
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }
